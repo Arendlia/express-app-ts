@@ -1,0 +1,9 @@
+services:
+  app:
+    image: node:lts-alpine3.20
+    ports:
+      - 9000:3000
+    volumes:
+      -  ./:/usr/app
+    working_dir: /usr/app
+    tty: true
