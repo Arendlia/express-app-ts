@@ -30,6 +30,7 @@ pipeline {
                 script {
                     docker.build("arendlia/jenkins")
                 }
+            }
         }
         stage('Push') {
             steps {
