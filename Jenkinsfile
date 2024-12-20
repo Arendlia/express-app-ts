@@ -27,8 +27,9 @@ pipeline {
                     dir 'src/main/docker'
                     filename 'Dockerfile'
                 }
-                docker.build("arendlia/jenkins")
-            }
+                script {
+                    docker.build("arendlia/jenkins")
+                }
         }
         stage('Push') {
             steps {
